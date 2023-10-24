@@ -1,0 +1,335 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../Fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Swiss;
+    src: url(../Fonts/Swiss-911.ttf);
+}
+
+body{
+    background-color: #eeeeee;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    width: 98.8vw;
+    font-family: 'Poppins';
+}
+
+nav{
+    top: 0;
+    z-index: 100;
+    position: sticky;
+    position: -webkit-sticky;
+    height: 95px;
+}
+
+.topnav{
+    background-color: #FFFFFF;
+    height: 50px;
+}
+
+.topnav .logo{
+    color: #DA1212;
+    font-family: Swiss;
+    font-style: italic;
+    
+    font-size: 48px;
+    margin-left: 50px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.botnav{
+    background-color: #DA1212;
+    height: 45px;
+    overflow: none;
+}
+
+.botnav ul li a{
+    float: left;
+}
+
+
+.botnav a{
+    padding-top: 5px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin-left: 25px;
+}
+
+.botnav .curr{
+    font-weight: 600;
+}
+
+.botnav ul{
+    float: right;
+    width: 40%;
+    font-size: 24px;
+    list-style-type: none;
+}
+
+
+.botnav .menu{
+    font-weight: 300;
+    transition: 0.2s;
+}
+
+.botnav .menu:hover{
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.slider-container{
+    height: 50vw;
+}
+
+.autoslider img{
+    margin-top: -100px;
+    display: block;
+    width: 98.8vw;
+    height: auto;
+    
+}
+
+.autoslider{
+    outline: 10px#DA1212;
+    width: 98.8vw;
+    height: auto;
+
+    overflow: hidden;
+}
+
+.slidercontent{
+    list-style: none;
+    display: flex;
+    animation-name: slide;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide{
+    10%{
+        transform: translateX(0);
+    }
+    15%, 30%{
+        transform: translateX(-98.8vw);
+    }
+    35%, 50%{
+        transform: translateX(-197.6vw);
+    }
+    55%, 70%{
+        transform: translateX(-296.4vw);
+    }   
+    75%, 90%{
+        transform: translateX(0);
+    }
+}
+
+#latestTitle{
+    font-size: 32px;
+}
+
+.latestProduct{
+    padding-left: 75px;
+    height: 50vw;
+}
+
+.latestProduct img{
+    width: 375px;
+    height: 325px;
+    padding-top: 10px;
+}
+
+.latestProduct img:hover{
+    opacity: 75%;
+}
+
+.products{
+    border-radius: 5px;
+    border: 0.1px solid #cfcfcf;
+    background-color: #FFFFFF;
+    width: 375px;
+    height: 500px;
+    position: relative;
+    top: 0px;
+    margin-right: 35px;
+    margin-top: 20px;
+    float: left;
+}
+
+#itemname{
+    padding-left: 15px;
+}
+
+#price{
+    margin-top: 5px;
+    padding-left: 15px;
+}
+
+.products a{
+    position: absolute;
+    width: auto;
+    font-size: 18px;
+    font-weight: 600;
+    color: #11468F;
+    margin-left: 16vw;
+    margin-top: 25px;
+    
+    border-radius: 2px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid #000000;
+    transition: 0.3s;
+    align-items: center;
+}
+
+.products a:hover{
+    background-color: #D9D9D9;
+    color: #11468F;
+    transition: all 0.3s ease-in-out;
+}
+
+.latestNews{
+    padding-left: 75px;
+    height: 45vw;
+    background-color: #ffffff;
+}
+
+#latestTitle{
+    padding-top: 20px;
+}
+
+.news{
+    border-radius: 5px;
+    border: 0.1px solid #cfcfcf;
+    background-color: #FFFFFF;
+    width: 550px;
+    height: 450px;
+    margin-left: 10px;
+    margin-right: 75px;
+    margin-top: 20px;
+    float: left;
+    padding-bottom: 25px;
+}
+
+.news img{
+    width: 550px;
+    height: 300px;
+}
+
+.news img:hover{
+    opacity: 75%;
+}
+
+#newstype{
+    color: #DA1212;
+    padding-left: 15px;
+}
+
+#date{
+    padding-left: 15px;
+}
+
+#newsDesc{
+    padding-left: 15px;
+}
+
+.news a{
+    position: absolute;
+    width: auto;
+    font-size: 18px;
+    font-weight: 600;
+    color: #11468F;
+    margin-left: 16vw;
+    margin-top: 25px;
+
+    border-radius: 2px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid #000000;
+    transition: 0.3s;
+    align-items: center;
+}
+
+.news a:hover{
+    background-color: #D9D9D9;
+    color: #11468F;
+    transition: all 0.3s ease-in-out;
+}
+
+.subscription{
+    background-image: url(../Images/SubsBG.jpg);
+    background-size: cover;
+    width: 98.8vw;
+    height: 50vw;
+    color: #FFFFFF;
+}
+
+#subsTitle{
+    font-size: 40px;
+    padding-top: 250px;
+    padding-left: 50px;
+}
+
+#subsDesc{
+    padding-left: 50px;
+}
+
+.subscription a{
+    position: absolute;
+    width: auto;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    
+    margin-top: 50px;
+    margin-left: 200px;;
+    border-radius: 7px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid #ffffff;
+    transition: 0.3s;
+    align-items: center;
+}
+
+.footer{
+    height: 190px;
+    width: 98.8vw;
+    background-color:#000000;
+    text-align: center;
+}
+
+.footer img{
+    width: 45px;
+    height: 45px;
+}
+
+.footer .iconGroup{
+    padding-top: 50px;
+    margin-bottom: -30px;
+
+}
+
+.footer .iconGroup a{
+    margin-left: 20px;
+}
+
+.footer .copyright{
+    font-size: 24px;
+    font-family: 'Poppins';
+    color: #ffffff;
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* section{
+    width: 90vw;
+} */
